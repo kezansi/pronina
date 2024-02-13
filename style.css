@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    font-family: 'Roboto', sans-serif; 
+}
+
+/* Создаем псевдоэлемент для звездного неба */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://i.pinimg.com/originals/b8/3b/21/b83b211182946897880775c9a504957c.gif'); /* Звездное небо */
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* Помещаем за основное содержимое */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    border-radius: 20px; /* Закругленные углы */
+    border: none;
+    background-color: rgba(44, 41, 41, 0.5); /* Прозрачный белый фон */
+    color: #fff; /* Белый текст */
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); /* Тень текста */
+    z-index: 1; /* Помещаем поверх фона */
+}
+
+particle {
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#promoCodeDisplay {
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+}
+.telegram-button {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    background-color: #575c5e38;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 25px;
+}
+
+.telegram-icon {
+    width: 20px; /* Размер иконки */
+    height: auto;
+    vertical-align: middle; /* Выравнивание иконки по вертикали */
+    margin-right: 5px; /* Отступ между иконкой и текстом */
+}
+
+.telegram-button:hover {
+    background-color: #005580;
+}
+
+
+/* Дополнительные стили для мобильных устройств (ширина экрана меньше 768px) */
+@media only screen and (max-width: 768px) {
+    button {
+        padding: 12px 24px; /* Уменьшаем отступы */
+        font-size: 16px; /* Уменьшаем размер шрифта */
+        border-radius: 25px; /* Уменьшаем радиус закругления углов */
+        white-space: nowrap; 
+        line-height: 1; /* Задаем фиксированный интервал между строками текста */
+    }
+
+    .telegram-button {
+        padding: 12px 24px; /* Уменьшаем отступы */
+        font-size: 12px; /* Уменьшаем размер шрифта */
+        border-radius: 25px; /* Уменьшаем радиус закругления углов */
+        white-space: nowrap; 
+        line-height: 1; /* Задаем фиксированный интервал между строками текста */
+    }
+}
