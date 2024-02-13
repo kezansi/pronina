@@ -107,7 +107,7 @@ function pop(e) {
 
     const promoCode = localStorage.getItem('promoCode');
     if (promoCode) {
-        promoCodeDisplay.textContent = 'Ваш промокод: ' + promoCode;
+        promoCodeDisplay.textContent = promoCode;
         button.style.display = 'none'; 
     } else {
         const promoCodes = ['website - на 50см', 'WOW - тебе крупно повезло', 'website -  на 50см', 'website - на 50см', 'website - на 50см'];
