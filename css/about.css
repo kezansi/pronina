@@ -1,0 +1,154 @@
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #f8f8f8;
+    color: #000000;
+    margin: 0;
+    padding: 0
+}
+
+header {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header button {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none; 
+}
+
+
+header .portfolio {
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    font-size: 14px;
+}
+
+
+main section.text-center {
+    background-color: #f8f8f8;
+    color: #000000;
+    padding: 60px 0;
+}
+
+main section.text-center h1 {
+    font-size: 96px;
+    font-weight: bold;
+}
+
+main section.text-center nav {
+    margin-top: 20px;
+}
+
+main section.text-center nav a {
+    font-size: 14px;
+    color: #000000;
+}
+
+main section.text-center nav a:hover {
+    text-decoration: underline;
+}
+
+main section.text-center nav span {
+    margin: 0 10px;
+}
+
+.images-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.images-container img {
+    width: 240px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.images-container img:last-child {
+    margin-right: 0;
+}
+
+main section.bg-black {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 60px 0;
+}
+
+main section.bg-black .max-w-3xl {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    padding: 40px;
+}
+
+main section.py-16 {
+    padding: 60px 0;
+    background-color: #f8f8f8;
+    color: #111111;
+    text-align: center;
+}
+
+main section.py-16 h2 {
+    font-size: 24px;
+    font-weight: normal;
+    font-family: "Roboto", sans-serif;
+}
+
+main section.py-16 .text-lg {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+main section.py-16 .flex {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+main section.py-16 .flex a {
+    font-size: 14px;
+    color: #000000;
+    margin: 0 20px;
+}
+
+main section.py-16 .flex a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #111111;
+    color: #FDFFF8;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.text-2xl font-bold mb-4{
+    font-family: "Inter", sans-serif;
+    font-weight: normal;
+}
+
+.text-white{
+    font-weight: bold;
+}
+
+p {
+    font-family: "Inter", sans-serif;
+    font-weight: normal;
+}
+
+.font-bold{
+    font-weight: bold;
+}

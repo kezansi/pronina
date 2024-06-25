@@ -1,0 +1,211 @@
+body {
+    background-color: #0a0a0a;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
+
+}
+
+.menu-button, .project-button, .form-button {
+    background-color: #333;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s;
+    border: 2px solid #fff;
+    font-weight: bold;
+}
+.blue-slash {
+    color: blue; /* Цвет для символа "/" */
+}
+.menu-button:hover, .project-button:hover, .form-button:hover {
+    background-color: #444;
+}
+
+.projects img {
+    width: 100%;
+    height: auto;
+}
+
+.projects > div {
+    position: relative;
+}
+
+.carousel .carousel-item {
+    display: none;
+}
+
+.carousel .carousel-item.active {
+    display: block;
+}
+.rounded {
+    border-radius: 2.25rem;
+}
+.service-block, .work-process-block {
+    background-color: #1a1a1a00; /* slightly grey background */
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+.text-5x3 {
+    font-size: 230px;
+    line-height: 1;
+    color: #1a1a1a;
+    white-space: nowrap;
+
+}
+.text-5x2 {
+    font-size: 230px;
+    line-height: 3;
+    color: #ffffff;
+    white-space: nowrap;
+    font-weight: 100;
+
+}
+.one-page-sites .tag {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: #555;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+    margin: 0.25rem; 
+    white-space: nowrap; 
+}
+
+.tag-container {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 0.1rem; 
+}
+
+ul {
+    padding-left: 1.25rem;
+    margin-top: 0.5rem;
+    list-style-type: disc;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+.p-4 .bg-gray-800 {
+    --tw-bg-opacity: 1;
+    background-color: #1a1a1a;
+}
+
+.p-2 {
+    padding: 0.5rem;
+    color: rgb(255, 255, 255);
+}
+.rounded {
+    border-radius: 2.25rem;
+}.menu-button {
+    padding: 0.5rem 1rem;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+.project-button2 {
+    padding: 0.5rem 1rem;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+.form-button {
+    padding: 0.5rem 1rem;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+.tag {
+    background-color: #333;
+    color: #fff;
+}
+
+.slider-container {
+    overflow: hidden;
+}
+
+#projectSlider {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.projects {
+    width: 100%;
+    
+}
+
+.projects .p-4 {
+    flex: 0 0 calc(100% / 3);
+    max-width: calc(100% / 3);
+}
+
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 10px;
+
+}
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%;
+    gap: 20px;
+}
+.carousel-item {
+    min-width: calc(100% / 3);
+    box-sizing: border-box;
+    padding: 20px;
+}
+.carousel-item img {
+    border-radius: 30px; 
+    width: 100%; 
+    height: auto;
+
+}
+
+.project-link {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.project-button {
+    width: 20px; 
+    height: 20px; 
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    padding: 0; 
+}
+.marquee {
+    overflow: hidden;
+    position: relative;
+}
+
+.marquee h3 {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
