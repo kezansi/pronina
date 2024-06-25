@@ -1,20 +1,240 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Промокоды для всех</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Web Design Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <button data-type="shadow">Получить промокод</button>
-    <div id="promoCodeDisplay"></div>
+    <header class="flex justify-between p-4">
+        <div>
+            <span>PORTFOLIO</span>
+        </div>
+        <div>
+            <button class="menu-button">Меню</button>
+        </div>
+    </header>
+    <main class="p-4">
+        <section class="text-center">
+            <h1 class="text-5x2 font-bold">WEB DESIGN</h1>
+            <div class="flex justify-center gap-4 my-4">
+                <span>telegram</span>
+                <span>instagram</span>
+            </div>
+            <div class="flex justify-center gap-4 my-4">
+                <span>UX/UI</span>
+                <span>Анимация</span>
+                <span>Tilda Publishing</span>
+            </div>
+            <p class="my-4">UX/UI дизайнер. Создаю сайты, которые создают впечатляющий брендинг.</p>
+            <button class="project-button2 flex items-center gap-2">
+                Обсудить проект <i class="fas fa-arrow-right"></i>
+            </button>
+        </section>
+        <section class="my-8">
+            <h2 class="text-lg mb-4">/ НЕДАВНИЕ РАБОТЫ</h2>
+            <div id="projectSlider" class="grid grid-cols-3 gap-4 projects carousel-inner">
+                <div class="carousel-item p-4 bg-gray-800 rounded">
+                    <img src="images/image2.jpeg" alt="Project 1 image"/>
+                    <a href="project1-link.html" class="project-link">
+                        <img src="images/arrow.png" class="project-button" alt="Перейти к проекту">
+                    </a>
+                    <div class="p-2">
+                        <h3 class="font-bold">Маслоочистка</h3>
+                        <p>Установка очистки масла.</p>
+                    </div>
+                </div>
+                    <div class="carousel-item p-4 bg-gray-800 rounded">
+                        <img src="images/image1.jpeg" alt="Project 2 image"/>
+                        <a href="project2-link.html" class="project-link">
+                            <img src="images/arrow.png" class="project-button" alt="Перейти к проекту">
+                        </a>
+                        <div class="p-2">
+                            <h3 class="font-bold">Fresh&press</h3>
+                            <p>Производство натуральных соков.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item p-4 bg-gray-800 rounded">
+                        <img src="images/image3.jpeg" alt="Project 3 image"/>
+                        <a href="project2-link.html" class="project-link">
+                            <img src="images/arrow.png" class="project-button" alt="Перейти к проекту">
+                        </a>
+                        <div class="p-2">
+                            <h3 class="font-bold">IT PRO</h3>
+                            <p>Разработка VR/AR/360 продуктов.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item p-4 bg-gray-800 rounded">
+                        <img src="images/image4.jpeg" alt="Project 5 image"/>
+                        <a href="project2-link.html" class="project-link">
+                            <img src="images/arrow.png" class="project-button" alt="Перейти к проекту">
+                        </a>
+                        <div class="p-2">
+                            <h3 class="font-bold">IT PRO</h3>
+                            <p>Разработка VR/AR/360 продуктов.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item p-4 bg-gray-800 rounded">
+                        <img src="images/image5.jpeg" alt="Project 5 image"/>
+                        <a href="project2-link.html" class="project-link">
+                            <img src="images/arrow.png" class="project-button" alt="Перейти к проекту">
+                        </a>
+                        <div class="p-2">
+                            <h3 class="font-bold">IT PRO</h3>
+                            <p>Разработка VR/AR/360 продуктов.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item p-4 bg-gray-800 rounded">
+                        <img src="images/image6.jpeg" alt="Project 6 image"/>
+                        <a href="project2-link.html" class="project-link">
+                            <img src="images/arrow.png" class="project-button" alt="Перейти к проекту">
+                        </a>
+                        <div class="p-2">
+                            <h3 class="font-bold">IT PRO</h3>
+                            <p>Разработка VR/AR/360 продуктов.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item p-4 bg-gray-800 rounded">
+                        <img src="images/image7.jpeg" alt="Project 7 image"/>
+                        <a href="project2-link.html" class="project-link">
+                            <img src="images/arrow.png" class="project-button" alt="Перейти к проекту">
+                        </a>
+                        <div class="p-2">
+                            <h3 class="font-bold">IT PRO</h3>
+                            <p>Разработка VR/AR/360 продуктов.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="my-8 service-block">
+            <div class="marquee">
+                <h3 class="text-5x3">//WEB DESIGN//</h3>
+            </div>
+        </section>
+        <section class="my-8 one-page-sites">
+            <h2 class="text-lg mb-4">/ НАШИ УСЛУГИ</h2>
+            <div class="grid grid-cols-3 gap-4">
+                <div class="p-4 bg-gray-800 rounded">
+                    <h3 class="font-bold">Одностраничный сайт</h3>
+                    <div class="tag-container flex flex-wrap gap-2 mt-2">
+                        <span class="tag">сайт визитка</span>
+                        <span class="tag">презентация услуги</span>
+                        <span class="tag">портфолио</span>
+                        <span class="tag">промо-сайт</span>
+                        <span class="tag">онлайн-магазин</span>
+                    </div>
+                    <div class="mt-4">
+                        <p>От 60 000 руб.</p>
+                        <p>10-25 дней</p>
+                    </div>
+                </div>
+                <div class="p-4 bg-gray-800 rounded">
+                    <h3 class="font-bold">Многостраничный сайт</h3>
+                    <div class="tag-container flex flex-wrap gap-2 mt-2">
+                        <span class="tag">детальная презентация продукта</span>
+                        <span class="tag">онлайн курс</span>
+                        <span class="tag">блог</span>
+                        <span class="tag">онлайн-магазин</span>
+                        <span class="tag">корпоративный сайт</span>
+                        <span class="tag">сайт с личным кабинетом</span>  
+                    </div>
+                    <div class="mt-4">
+                        <p>От 90 000 руб.</p>
+                        <p>25-30 дней</p>
+                    </div>
+                </div>
+                <div class="p-4 bg-gray-800 rounded">
+                    <h3 class="font-bold">Интернет магазин</h3>
+                    <div class="tag-container flex flex-wrap gap-2 mt-2">
+                        <span class="">Онлайн магазин для продажи товаров с онлайн оплатой, аналитикой, управляемым каталогом и интеграцией CRM.</span>
+                    </div>
+                    <div class="mt-4">
+                        <p>Цена: 15 000 руб.</p>
+                        <p>Сроки: 15 дней</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <ul class="list-disc pl-5 mt-2">
+            <li>Разбиваю задачу на этапы с удобной оплатой. Окончательная стоимость и сроки работ формируются после проведения брифа или созвона.</li>
+        </ul>
+        <div class="flex justify-center mt-4">
+            <a href="brif.html" class="form-button mx-2">Заполнить бриф <i class="fas fa-arrow-right"></i></a>
+            <span>или</span>
+            <a href="about.html" class="form-button mx-2">Оставьте заявку <i class="fas fa-arrow-right"></i></a>
+        </div>
+        
+        <section class="my-8 one-page-sites">
+            <h2 class="text-lg mb-4">/ КАК МЫ БУДЕМ РАБОТАТЬ</h2>
+            <div class="grid grid-cols-3 gap-4 work-process">
+                <div class="p-4 bg-gray-800 rounded">
+                    <h3 class="font-bold">Начало работы</h3>
+                    <ul class="tag-container flex flex-wrap gap-2 mt-2 list-disc pl-5">
+                        <span class="tag">бриф</span>
+                        <span class="tag">тех-задание</span>
+                        <span class="tag">определение объем и сроков работы</span>
+                        <span class="tag">расчёт стоимости</span>
+                        <span class="tag">подписание договора</span>
 
-    <a href="https://t.me/izmCM_bot" class="telegram-button">
-        <img src="telegram-icon.png" alt="Telegram Icon" class="telegram-icon">
-        Перейти в Telegram
-    </a>
+                    </ul>
+                    <h3 class="font-bold">Верстка</h3>
+                    <ul class="tag-container flex flex-wrap gap-2 mt-2 list-disc pl-5">
+                        <span class="tag">верстка дизайн макета</span>
+                        <span class="tag">адаптив под все устройства</span>
+                        <span class="tag">анимация</span>
+                        <span class="tag">тестирование</span>
 
-    <script src="script.js"></script>
+                    </ul>
+                </div>
+                <div class="p-4 bg-gray-800 rounded">
+                    <h3 class="font-bold">Аналитика</h3>
+                    <ul class="tag-container flex flex-wrap gap-2 mt-2 list-disc pl-5">
+                        <span class="tag">анализ конкурентов</span>
+                        <span class="tag">исследование ниши</span>
+                        <span class="tag">создание структуры проекта</span>
+                        <span class="tag">прототипирование</span>
+
+                    </ul>
+                    <h3 class="font-bold">Сдача проекта</h3>
+                    <ul class="tag-container flex flex-wrap gap-2 mt-2 list-disc pl-5">
+                        <span class="tag">сдача проекта клиенту</span>
+                        <span class="tag">подключение домена</span>
+                        <span class="tag">подключение форма</span>
+                        <span class="tag">seo оптимизация</span>
+
+                    </ul>
+                </div>
+                <div class="p-4 bg-gray-800 rounded">
+                    <h3 class="font-bold">Дизайн</h3>
+                    <ul class="tag-container flex flex-wrap gap-2 mt-2 list-disc pl-5">
+                        <span class="tag">работа с референсами</span>
+                        <span class="tag">дизайн-концепт</span>
+                        <span class="tag">дизайн-макет</span>
+                        <span class="tag">макеты внутренних страниц</span>
+
+                    </ul>
+                    <ul class="">
+                        <li>Каждый этап является важной частью процесса, который обеспечивает последовательное и эффективное взаимодействие между продуктом и потребителем.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+    </section>
+    <h2 class="text-lg mb-4">/ КОНТАКТЫ</h2>
+    <section class="my-8 service-block">
+        <div>
+            <h3 class="text-5x3">PRONINA</h3>
+        </div>
+    </section>
+
+    </section>
+
+    </main>
+    <script src="js/scripts.js"></script>
+    
 </body>
 </html>
